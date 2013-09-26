@@ -1,0 +1,49 @@
+﻿# [Usage]
+# Keymapper.exe [hide] [configfile]
+
+# [Modifiers]
+# ALT   : 01
+# Ctrl  : 02
+# Shift : 04
+# Win   : 08
+
+# lang   => [CHAR8] GetCurrentLangId
+# strmap => [STR]   http://msdn.microsoft.com/en-us/library/system.windows.forms.sendkeys.send.aspx
+# exec   => [STR]   path without args
+# keymap => [VK X2] http://msdn.microsoft.com/en-us/library/windows/desktop/dd375731(v=vs.85).aspx *May cause inf.loop
+# mouse  => [HEX X2]
+#LeftDown   = 02
+#LeftUp     = 04
+#MiddleDown = 20
+#MiddleUp   = 40
+#Move       = 01
+#RightDown  = 08
+#RightUp    = 10
+#Wheel      = 80 [HEX X4]
+
+
+# [Config]
+! NodeJS_URL       =  http://127.0.0.1:10001/
+! NodeJS_autostart = false
+! NodeJS_retry     = 0
+# PedalUp   = FF00
+# PedalDown = FF01
+
+[LANG]
+LANG=0630=A0000409
+LANG=0631=0000041E
+LANG=0632=00000411
+
+[STRMAP]
+STRMAP=0053=A
+STRMAP=0041=S
+
+[KEYMAP]
+KEYMAP=0044=B3
+KEYMAP=0042=411043!104547
+
+[EXEC]
+EXEC=067B=C:\TaskMan\tm.exe
+
+[MOUSE]
+mouse=FF01=06
